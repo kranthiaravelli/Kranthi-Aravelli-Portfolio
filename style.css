@@ -65,7 +65,7 @@ nav li a:hover {
     width: 100%;
     height: auto;
     text-align: center;
-    font-size: 12px;
+    font-size: 8px;
     background-color: black;
     color: white;
     padding: 3px 0;
@@ -392,7 +392,7 @@ nav li a:hover {
 
 #github {
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     scroll-margin-top: 80px;
     background: transparent;
     margin-top: 30px;
@@ -436,10 +436,11 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     gap: 16px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.444);
+    text-align: center;
 
 }
 
@@ -449,7 +450,7 @@ nav li a:hover {
 }
 
 .git-cards a {
-    font-size: 13px;
+    font-size: 11px;
     text-decoration: none;
     background-color: black;
     padding: 5px 15px;
@@ -472,6 +473,7 @@ nav li a:hover {
     max-width: 800px;
     margin-top: 30px;
     font-size: 18px;
+    padding: 0 40px;
 }
 
 .github-stats {
@@ -479,6 +481,7 @@ nav li a:hover {
     justify-content: center;
     margin-top: 30px;
     gap: 100px;
+    padding: 20px 40px;
 }
 
 .stat-cards {
@@ -493,8 +496,9 @@ nav li a:hover {
 
 #contact {
     width: 100%;
-    min-height: 100vh;
-    margin-top: 30px;
+    min-height: auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
     scroll-margin-top: 80px;
 }
 
@@ -552,6 +556,10 @@ nav li a:hover {
         align-items: center;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .hero .hero_left h1{
+        text-align: center;
     }
 
     .hero .hero_left p {
@@ -650,6 +658,17 @@ nav li a:hover {
         display: flex;
         margin-top: 10px;
     }
+
+    #skills .skills_main {
+        padding: 0 20px;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    #skills h1 {
+        text-align: center;
+        font-size: 40px;
+        padding: 0;
+    }
 }
 
 @media(max-width: 863px){
@@ -666,10 +685,13 @@ nav li a:hover {
         display: block;
     }
 
-    .nav_elements {
+    nav .nav_elements {
         width: 100%;
         display: none;
         flex-direction: column;
+        position: absolute;
+        z-index: -10000;
+        top: 0;
         align-items: center;
         gap: 18px;
         padding-top: 20px;
@@ -682,5 +704,71 @@ nav li a:hover {
 
     .nav_elements li a {
         font-size: 16px;
+    }
+}
+
+@media(max-width: 940px){
+    .git-card-holder{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    }
+
+    .git-cards h2{
+        text-align: center;
+    }
+
+    .github-stats {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .github-stats .stat-cards p {
+        text-align: center;
+    }
+}
+
+@media(max-width: 820px){
+    .contact-holder{
+        flex-direction: column-reverse;
+    }
+
+    .contact-holder img {
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 80%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+@media(max-width:570px){
+    .hero {
+        padding: 0 20px;
+    }
+    
+    .hero .hero_left h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .hero .hero_left .main{
+        font-size: 19px;
+    }
+}
+
+@media(max-width: 580px){
+    #contact h1 {
+        font-size: 50px;
+        padding-left: 40px;
+    }
+
+    #contact h2 {
+        font-size: 100%;
+        padding-left: 40px;
+    }
+
+    #contact .contact-holder {
+        padding: 40px;
     }
 }
