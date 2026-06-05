@@ -9,6 +9,9 @@ html {
     margin: 0;
     box-sizing: border-box;
     font-family: "Google Sans Flex";
+    -webkit-tap-highlight-color: transparent;
+    background: #EEEEEE;
+
 }
 
 nav {
@@ -18,8 +21,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(10px);
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.349);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,25 +32,30 @@ nav h1 {
     letter-spacing: -1px;
     font-size: 26px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 nav h1 span {
     font-weight: 300;
+    background-color: transparent;
 }
 
 nav .nav_elements {
     display: flex;
     gap: 25px;
+    background-color: transparent;
 }
 
 nav .nav_elements li {
     list-style: none;
+    background-color: transparent;
 }
 
 nav .nav_elements li a{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.52);
     transition: .2s ease;
+    background-color: transparent;
 }
 
 nav li a:hover {
@@ -100,6 +108,11 @@ nav li a:hover {
     font-size: 20px;
     font-weight: 500;
     padding: 10px 0;
+    color: black;
+}
+
+.hero_left p {
+    color: #4f4f4f;
 }
 
 .hero .hero-btns {
@@ -109,7 +122,7 @@ nav li a:hover {
 
 .cont-btn {
     padding: 5px 15px;
-    background-color: rgb(78, 99, 163);
+    background-color: #007979;
     color: white;
     border: none;
     border-radius: 3px;
@@ -128,7 +141,7 @@ nav li a:hover {
 
 .btn {
     padding: 5px 15px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     color: white;
     border-radius: 3px;
     border: none;
@@ -140,8 +153,13 @@ nav li a:hover {
     margin-top: 20px;
 }
 
+.hero .hero_left .hero-btns .btn:hover {
+    background-color: #007979;
+    color: white;
+}
+
 .btn:hover {
-    background-color: rgb(78, 99, 163);
+    background-color: #007979;
     color: white;
 }
 
@@ -166,7 +184,7 @@ nav li a:hover {
 }
 
 .follow a{
-    color: rgb(78, 99, 163);
+    color: #007979;
     text-decoration: none;
 }
 
@@ -194,14 +212,14 @@ nav li a:hover {
     width: 100%;
     height: auto;
     scroll-margin-top: 80px;
-    background: white;
+    background: transparent;
     padding-bottom: 100px;
 }
 
 .about-main {
     width: 90%;
     height: auto;
-    background-color: rgb(226, 226, 226);
+    background-color: #DDDDDD;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
@@ -211,23 +229,33 @@ nav li a:hover {
     justify-content: space-between;
     align-items: flex-start;
     padding: 60px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.351);
 }
 
 .about-main .about_info {
+    background-color: transparent;
     max-width: 50%;
 }
 
 .about-main .about_info h1 {
     margin-top: 20px;
+    background-color: transparent;
+    color: #007979;
+}
+
+.about-main p{
+    background-color: transparent;
 }
 
 .about-main .about_info .subtext {
+    background-color: transparent;
     padding-bottom: 20px;
     font-size: 13px;
     color: rgb(55, 55, 55);
 }
 
 .about-main .about_info h2 {
+    background-color: transparent;
     font-weight: 300;
     letter-spacing: 0;
 }
@@ -246,12 +274,14 @@ nav li a:hover {
     width: 100%;
     height: auto;
     scroll-margin-top: 80px;
-    background: white;
+    background: transparent;
 }
 
 #skills h1 {
     font-size: 60px;
     padding-left: 80px;
+    color: #000;
+    background-color: transparent;
 }
 
 .skills_main {
@@ -265,8 +295,8 @@ nav li a:hover {
 .skills-cards {
     width: 100%;
     height: auto;
-    background-color: transparent;
-    border: 1px solid black;
+    background-color: #ffffff;
+    border: none;
     border-radius: 8px;
     display: flex;
     flex-grow: 1;
@@ -274,11 +304,28 @@ nav li a:hover {
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.146);
+    cursor: default;
+    transition: .2s ease;
+    opacity: 70%;
 }
+
+.skills-cards:hover {
+    transform: scale(1.02);
+    opacity: 100%;
+}
+
+
 
 #skills .skills-cards h1 {
     font-size: 30px;
     padding-left: 0;
+    background-color: transparent;
+    color: black;
+}
+
+.skills-cards img,h4 {
+    background-color: transparent;
 }
 
 .skills-cards p {
@@ -286,6 +333,7 @@ nav li a:hover {
     padding-bottom: 10px;
     padding-top: 10px;
     text-align: center;
+    background-color: transparent;
 }
 
 /* Projects Section */
@@ -298,7 +346,7 @@ nav li a:hover {
     margin-top: 100px;
     padding-top: 50px;
     padding-bottom: 30px;
-    background: black;
+    background: #EEEEEE;
     color: white;
 }
 
@@ -306,6 +354,8 @@ nav li a:hover {
     text-align: right;
     padding: 0 80px;
     font-size: 60px;
+    background-color: transparent;
+    color: black;
 }
 
 .projects_holder {
@@ -315,6 +365,7 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    background-color: transparent;
 }
 
 .project_cards {
@@ -322,36 +373,60 @@ nav li a:hover {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(43, 43, 43);
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 8px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.444);
+    box-shadow: 1px 1px 5px rgba(15, 15, 15, 0.444);
+    transition: .3s ease;
 }
 
 .project_cards h2 {
     font-size: 21px;
-    font-weight: 600;    
+    font-weight: 600; 
+    background-color: transparent;   
+}
+
+.pro-title-container {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pro-title-container .pro-label {
+    color: green;
+    background-color: rgb(214, 247, 214);
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 10px;
 }
 
 .project_cards .label {
     font-size: 13px;
     color: grey;
+    background-color: transparent;
 }
 
 .pro_skills {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px;
+    background-color: transparent;
 }
 
 .pro-image {
     width: auto;
     height: auto;
+    background-color: transparent;
+}
+
+.pro-image a{
+    background-color: transparent;
 }
 
 .pro-image img {
@@ -365,15 +440,22 @@ nav li a:hover {
     font-size: 14px;
     max-width: 800px;
     margin-top: 40px;
+    background-color: transparent;
+}
+
+.project_cards .pro-info .proj_info {
+    background-color: transparent;
 }
 
 .pro-info {
     font-size: 12px;
+    background-color: transparent;
 }
 
 .pro-info a{
     color: rgb(78, 99, 163);
     text-decoration: none;
+    background-color: transparent;
 }
 
 .pro-info a:hover {
@@ -385,6 +467,22 @@ nav li a:hover {
     text-align: center;
     color: grey;
     font-weight: 200;
+    background-color: transparent;
+}
+
+.project_cards .btns{
+    background-color: transparent;
+}
+
+.project_cards .btns button {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+
+.project_cards .btns button:hover {
+    background-color: #007979;
+    color: white;
 }
 
 /* GitHub Section */
@@ -396,6 +494,12 @@ nav li a:hover {
     scroll-margin-top: 80px;
     background: transparent;
     margin-top: 30px;
+}
+
+#github .info, 
+#projects .info,
+#contact .info_last  {
+    padding: 0 40px;
 }
 
 .main-logo {
@@ -669,6 +773,19 @@ nav li a:hover {
         font-size: 40px;
         padding: 0;
     }
+
+    .skills-cards {
+        opacity: 100%;
+    }
+}
+
+@media(max-width: 580px){
+    .pro-title-container{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 5px;
+    }
 }
 
 @media(max-width: 863px){
@@ -770,5 +887,19 @@ nav li a:hover {
 
     #contact .contact-holder {
         padding: 40px;
+    }
+}
+
+@media(max-width: 440px){
+    .project_cards .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project_cards .btns button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 30px;
     }
 }
