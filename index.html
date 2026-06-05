@@ -10,8 +10,8 @@
     <nav>
         <h1>Kranthi <span>Aravelli</span></h1>
 
-        <div class="menu-toggle" id="menu-toggle">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        <div class="menu-toggle" id="menu-togg  le">
+            <svg onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </div>
         
         <div class="nav_elements" id="nav-elements">
@@ -21,7 +21,7 @@
             <li><a href="#projects">Projects</a></li>
             <li><a href="#github">GitHub</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Resume</a></li>
+            <li><a href="/assets/resume.html">Resume</a></li>
         </div>
     </nav>
 
@@ -109,13 +109,35 @@
     <section id="projects">
         <h1>Portfolio</h1>
         <div class="projects_holder">
+
+            <div class="project_cards">
+                <div class="pro-info">
+                    <div class="pro-title-container">
+                        <h2>OnePlus Buds Landing Page</h2>
+                        <p class="pro-label">Recommended to Look</p>
+                    </div>
+                    <p class="label">Responsive Frontend Web Project</p>
+                    <p class="description">This project was done during my first semester for my ECS Project. Our teacher asked us to make some projects by following any of the project approaches, waterfall approach or agile approach. I gathered all the requirements before making the project, designed the layout of the site using UI tools like Figma, Started developing using HTML & CSS. I've got good at using media queries in CSS by the time of this project. Just check it out once. This Website is responsive!</p>
+                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
+                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                    <div class="btns">
+                        <a href="https://kranthiaravelli.github.io/One-Plus-Buds-Landing-Page-Project/" target="_blank" title="Visit the website in New Tab"><button class="btn">Visit Site</button></a>
+                        <a href="https://github.com/kranthiaravelli/One-Plus-Buds-Landing-Page-Project/blob/main/index.html" target="_blank" title="Go to source code in GitHub"><button class="btn">Source Code</button></a>
+                        <a href="assets/Project Document - OnePlus Landing Web Page by Kranthi Aravelli.pdf" target="_blank" title="View project document PDF"><button class="btn">Project Document</button></a>
+                    </div>
+                </div>
+                <div class="pro-image">
+                    <a href="Images/oneplus.png" target="_blank"><img src="Images/oneplus.png" alt="OnePlus Buds Webpage Image"></a>
+                </div>
+            </div>
+
             <div class="project_cards">
                 <div class="pro-info">
                     <h2>Google Clone</h2>
                     <p class="label">Frontend Web Project</p>
                     <p class="description">Google Home Page looks cool to recreate, So I tried cloning Google Home Page. This was my first cloning webpage of a real world website. I tried my best as a learner in the beginning, to match the exact positions of the buttons, input box, background image and Google Logo. Finally It was great in my eyes. Just Have a look at once. Remember They are not responsive!</p>
                     <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  GitHub</p>
-                    <p class="pro_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
                     <div class="btns">
                         <a href="https://kranthiaravelli.github.io/Google-Clone-Website/" target="_blank"><button class="btn">Visit Site</button></a>
                         <a href="https://github.com/kranthiaravelli/Google-Clone-Website/blob/main/index.html" target="_blank"><button class="btn">Source Code</button></a>
@@ -132,7 +154,7 @@
                     <p class="label">Frontend Web Project</p>
                     <p class="description">Comer Restaurant is a Concept Brand which offer its services through online Menu Bookings. This is a concept brand created by myself and I made a landing webpage for the restaurant. I used HTML & CSS to create this webpage, This is the basic project that I made during my practice of the Frontend Part. Remember They are not responsive!</p>
                     <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
-                    <p class="pro_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
                     <div class="btns">
                         <a href="https://kranthiaravelli.github.io/Comer-Restaurant-Menu-Page/" target="_blank"><button class="btn">Visit Site</button></a>
                         <a href="https://github.com/kranthiaravelli/Comer-Restaurant-Menu-Page/blob/main/index.html" target="_blank"><button class="btn">Source Code</button></a>
@@ -149,7 +171,7 @@
                     <p class="label">Frontend Web Project</p>
                     <p class="description">Limitless Pre Schools are one of the Emerging Primary School in Hyderabad. Founded by Mr. Jaya Prakash Paul, He was our sir when I used to study in my school, did not even expect that he would become a chairman for such an amazing school. I tried making a website for his school. Gathering the information about that was quite challenging but finally, this is how it worked out. Check that out. Remember They are not responsive!</p>
                     <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
-                    <p class="pro_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
                     <div class="btns">
                         <button class="btn" style="cursor: no-drop; background-color: rgb(74, 74, 74);">Visit Site</button>
                         <button class="btn" style="cursor: no-drop; background-color: rgb(74, 74, 74);">Source Code</button>
@@ -160,22 +182,6 @@
                 </div>
             </div>
 
-            <div class="project_cards">
-                <div class="pro-info">
-                    <h2>OnePlus Buds Landing Page</h2>
-                    <p class="label">Responsive Frontend Web Project</p>
-                    <p class="description">This project was done during my first semester for my ECS Project. Our teacher asked us to make some projects by following any of the project approaches, waterfall approach or agile approach. I gathered all the requirements before making the project, designed the layout of the site using UI tools like Figma, Started developing using HTML & CSS. I've got good at using media queries in CSS by the time of this project. Just check it out once. This Website is responsive!</p>
-                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
-                    <p class="pro_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
-                    <div class="btns">
-                        <a href="https://kranthiaravelli.github.io/One-Plus-Buds-Landing-Page-Project/" target="_blank"><button class="btn">Visit Site</button></a>
-                        <a href="https://github.com/kranthiaravelli/One-Plus-Buds-Landing-Page-Project/blob/main/index.html" target="_blank"><button class="btn">Source Code</button></a>
-                    </div>
-                </div>
-                <div class="pro-image">
-                    <a href="Images/oneplus.png" target="_blank"><img src="Images/oneplus.png" alt="OnePlus Buds Webpage Image"></a>
-                </div>
-            </div>
         </div>
         <p class="info">About to work on more projects, Will keep this site updated.</p>
     </section>
@@ -259,4 +265,7 @@
     
     <script src="script.js"></script>
 </body>
+<footer>
+
+</footer>
 </html>
