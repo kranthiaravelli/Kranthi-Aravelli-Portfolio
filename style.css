@@ -204,6 +204,60 @@ nav li a:hover {
     }
 }
 
+.leet-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leet_mid {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: -50px;
+    transition: .2s ease;
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.leet_mid h1{
+    font-size: 28px;
+}
+
+.leet_mid span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.leet {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: -50px;
+    transition: .2s ease;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.leet h1 {
+    font-size: 20px;
+}
+
+.leet span {
+    font-size: 35px;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.leet:hover, .leet_mid:hover {
+    opacity: 100%;
+}
 
 /* About Section */
 
@@ -901,5 +955,13 @@ nav li a:hover {
         text-align: center;
         justify-content: center;
         border-radius: 30px;
+    }
+}
+
+@media(max-width: 700px){
+    .leet-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
 }
