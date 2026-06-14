@@ -362,6 +362,9 @@ nav li a:hover {
     cursor: default;
     transition: .2s ease;
     opacity: 70%;
+
+    animation-name: reveal;
+    animation-duration: 1s;
 }
 
 .skills-cards:hover {
@@ -388,6 +391,14 @@ nav li a:hover {
     padding-top: 10px;
     text-align: center;
     background-color: transparent;
+}
+
+.skills-cards-span {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.374);
 }
 
 /* Projects Section */
@@ -605,6 +616,7 @@ nav li a:hover {
 .git-cards h2 {
     font-size: 20px;
     font-weight: 500;
+    background-color: transparent;
 }
 
 .git-cards a {
@@ -707,6 +719,101 @@ nav li a:hover {
     display: flex;
     justify-content: space-between;
     padding: 0 80px;
+}
+
+#achievements {
+    scroll-margin-top: 90px;
+    width: 100%;
+    height: auto;
+    padding: 0 80px;
+}
+
+#achievements h1 {
+    font-size: 60px;
+    letter-spacing: -2px;
+    margin-top: 60px;
+}
+
+#achievements .achieve-container {
+    width: 100%;
+    height: auto;
+    background-color: #DDDDDD;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.085);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.227);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#achievements .achieve-container .achieve-cards {
+    max-width: 400px;
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: default;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.166);
+    transition: .2s ease;
+}
+
+#achievements .achieve-container .achieve-cards:hover {
+    color: #007979;
+    border: 1px solid #007979;
+}
+
+#achievements .achieve-container .achieve-cards h2 {
+    background-color: transparent;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+#achievements .achieve-container .achieve-cards p {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.508);
+} 
+
+#achievements .achieve-container .achieve-cards .achieve-info {
+    font-size: 12px;
+    margin-top: 10px;
+    color: black;
+}
+
+#achievements .achieve-container .achieve-cards-span {
+    background-color: transparent;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+#achievements .achieve-container .achieve-cards-span p {
+    background-color: transparent;
+    max-width: 200px;
+    text-align: center;
+    color: #000000aa;
+    font-weight: 200;
+}
+
+
+#achievements .achieve-container .achieve-cards .organisers {
+    margin-top: 20px;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+}
+
+#achievements .achieve-container .achieve-cards .time {
+    font-size: 9px;
+    font-weight: 300;
+    margin-top: 8px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.556);
 }
 
 @media(max-width: 1000px){
