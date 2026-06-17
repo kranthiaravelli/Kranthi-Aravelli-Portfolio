@@ -66,6 +66,11 @@ nav li a:hover {
     display: none;
     font-size: 28px;
     cursor: pointer;
+    background-color: transparent;
+}
+
+.menu-toggle img {
+    background-color: transparent;
 }
 
 .alert {
@@ -176,6 +181,13 @@ nav li a:hover {
 .hero .hero-btns .btn:hover {
     background-color: rgb(78, 99, 163);
     color: white;
+}
+
+.nav_elements .selected {
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 .follow p {
@@ -472,10 +484,13 @@ nav li a:hover {
 }
 
 .project_cards .label {
-    font-size: 13px;
+    font-size: 12px;
+    margin-top: 3px;
     color: grey;
     background-color: transparent;
 }
+
+
 
 .pro_skills {
     font-size: 16px;
@@ -548,6 +563,19 @@ nav li a:hover {
 .project_cards .btns button:hover {
     background-color: #007979;
     color: white;
+}
+
+.planned_pro_container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-content: start;
+    gap: 20px;
+}
+
+.planned_pro_container .project_cards {
+    width: 100%;
 }
 
 /* GitHub Section */
@@ -961,6 +989,11 @@ nav li a:hover {
 
     .menu-toggle {
         display: block;
+        background-color: transparent;
+    }
+    
+    .menu-toggle img {
+    background-color: transparent;
     }
 
     nav .nav_elements {
