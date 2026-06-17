@@ -21,12 +21,12 @@
     <nav>
         <h1>Kranthi <span>Aravelli</span></h1>
 
-        <div class="menu-toggle" id="menu-togg  le">
+        <div class="menu-toggle" id="menu-toggle">
             <svg onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </div>
         
         <div class="nav_elements" id="nav-elements">
-            <li><a href="#">Home</a></li>
+            <li><a href="#" class="selected">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -141,8 +141,11 @@
 
     <section id="projects">
         <h1>Projects</h1>
+        
         <div class="projects_holder">
 
+        <h3 style="color: black; font-size: 36px; margin-bottom: -20px; padding-left: 3px; margin-top: 20px; display: flex; align-items: center; gap: 16px;">Featured Projects <span style="display: flex; justify-content: center; align-items: center; font-size: 15px; margin-top: 5px; background-color: transparent; width: 23px; border-radius: 50%; border: 2px solid black; cursor: pointer;" title="The projects showcased here are the ones successfully completed working on. Scroll down to see what are the upcoming planned projects.">i</span></h3>
+        
             <div class="project_cards">
                 <div class="pro-info">
                     <div class="pro-title-container">
@@ -212,6 +215,48 @@
                 </div>
                 <div class="pro-image">
                     <a href="Images/limitless.png" target="_blank"><img src="Images/limitless.png" alt="Google Clone Site Image"></a>
+                </div>
+            </div>
+
+            <h3 style="color: black; font-size: 36px; margin-bottom: -20px; padding-left: 3px; margin-top: 20px;">Planned Projects</h3>
+            
+            <div class="planned_pro_container">
+                <div class="project_cards">
+                    <div class="pro-info">
+                        <div class="pro-title-container">
+                            <h2>Training a Machine Learning Model</h2>
+                            <p class="pro-label" style="background-color: rgb(222, 231, 245); color: rgb(0, 94, 255); cursor: default;" title="This project was successfully planned to start and add the details to this portfilio page.">Planned</p>
+                        </div>
+                        <p class="label">Python Data Science Project</p>
+                        <p class="description" style="color: gray; font-style: italic;">No Description available.</p>
+                        <p class="pro_skills" style="white-space: pre-wrap;">Skills:  Python  |  Data Analysis</p>
+                        <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                        <div class="btns">
+                            <button class="btn" style="cursor: no-drop; background-color: rgb(74, 74, 74);" title="Details not available">View Details</button>
+                        </div>
+                    </div>
+                    <div class="pro-image">
+                        <!-- <a href="Images/limitless.png" target="_blank"><img src="Images/limitless.png" alt="Google Clone Site Image"></a> -->
+                    </div>
+                </div>
+
+                <div class="project_cards">
+                    <div class="pro-info">
+                        <div class="pro-title-container">
+                            <h2>Hosting a Trained Machine Learning Model</h2>
+                            <p class="pro-label" style="background-color: rgb(222, 231, 245); color: rgb(0, 94, 255); cursor: default;" title="This project was successfully planned to start and add the details to this portfilio page.">Planned</p>
+                        </div>
+                        <p class="label" style="white-space: pre-wrap;">Python Data Science Project  |  Full Stack Project</p>
+                        <p class="description" style="color: gray; font-style: italic;">No Description available.</p>
+                        <p class="pro_skills" style="white-space: pre-wrap;">Skills Used: N/A</p>
+                        <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                        <div class="btns">
+                            <button class="btn" style="cursor: no-drop; background-color: rgb(74, 74, 74);" title="Details not available">View Details</button>
+                        </div>
+                    </div>
+                    <div class="pro-image">
+                        <!-- <a href="Images/limitless.png" target="_blank"><img src="Images/limitless.png" alt="Google Clone Site Image"></a> -->
+                    </div>
                 </div>
             </div>
 
@@ -322,6 +367,6 @@
     <script src="script.js"></script>
 </body>
 <footer>
-
+    
 </footer>
 </html>
