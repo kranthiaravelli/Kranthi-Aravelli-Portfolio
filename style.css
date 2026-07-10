@@ -492,6 +492,7 @@ nav li a:hover {
 
 
 
+
 .pro_skills {
     font-size: 16px;
     margin-top: 20px;
@@ -844,6 +845,27 @@ nav li a:hover {
     color: rgba(0, 0, 0, 0.556);
 }
 
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+footer p {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.57);
+    font-size: 11px;
+    font-weight: 200;
+    letter-spacing: 0;
+    text-align: right;
+}
+
 @media(max-width: 1000px){
     .hero .hero_left{
         align-items: center;
@@ -965,6 +987,14 @@ nav li a:hover {
 
     .skills-cards {
         opacity: 100%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    footer p{
+        text-align: center;
     }
 }
 
