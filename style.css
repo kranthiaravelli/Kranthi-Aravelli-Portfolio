@@ -1263,6 +1263,7 @@ footer {
 }
 
 #terms-and-conditions {
+    min-height: 347px;
     scroll-margin-top: 60px;
     padding: 20px 60px;
 }
@@ -1286,6 +1287,16 @@ footer {
     color: rgba(255, 255, 255, 0.742);
     font-weight: 300;
     line-height: 20px;
+    max-width: 700px;
+}
+
+.terms-wrapper p a{
+    text-decoration: none;
+    color: #7f00ff;
+}
+
+.terms-wrapper p a:hover {
+    text-decoration: underline;
 }
 
 .terms-wrapper .terms-holder {
@@ -1644,6 +1655,375 @@ footer {
     font-size: 30px;
     font-weight: 900;
     color: rgba(255, 255, 255, 0.774);
+}
+
+.hire-me {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.hire-right {
+    margin-top: 30px;
+}
+
+.hire-right h1 {
+    font-size: 18px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #382d58;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hire-right h1:hover {
+    background-color: #1a1033;
+}
+
+.hire-card-holder {
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: flex-start;
+    justify-content: center;
+    grid-template-columns: repeat(3, 400px) 1fr;
+    gap: 30px;
+    padding: 10px 20px;
+
+}
+
+.hire-card-ba {
+    max-width: 380px;
+    padding: 20px;
+    background-color: rgba(0, 191, 255, 0.068);
+    border: 1px solid rgba(0, 191, 255, 0.266); 
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.hire-card-st {
+    max-width: 380px;
+    padding: 20px;
+    background-color: #fffeff17;
+    border: 1px solid rgba(254, 254, 254, 0.266); 
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 0 0 20px #ffffff29;
+}
+
+.hire-card-pr {
+    max-width: 380px;
+    padding: 20px;
+    background-color: #fff70017;
+    border: 1px solid rgba(255, 255, 255, 0.42); 
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 0 0 40px #ffdd0234;
+}
+
+.hire-card-outer-st {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+}
+
+.hire-card-outer-st span {
+    background-color: transparent;
+    padding: 5px 10px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 4px;
+    color: black;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.hire-card-ba p {
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.hire-card-st p {
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.hire-card-pr p {
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.hire-card-title-ba {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.hire-card-title-st {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.hire-card-title-pr {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.hire-card-title-ba p {
+    font-weight: 600;
+}
+
+.hire-card-title-st p {
+    font-weight: 600;
+}
+
+.hire-card-title-pr p {
+    font-weight: 600;
+}
+
+.hire-card-title-ba h1 {
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    color: #00bfff;
+}
+
+.hire-card-title-st h1 {
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    color: #00bfff;
+}
+
+.hire-card-title-pr h1 {
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 20px #fff7009d;
+}
+
+.hire-card-title-st h1 {
+    background-color: transparent;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.best-for {
+    background-color: #00bfff3d;
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 1px solid #00bfff34;
+    border-radius: 40px;
+    margin-bottom: 5px;
+}
+
+.best-for-st {
+    background-color: #ffffff3d;
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 1px solid #fffeff34;
+    border-radius: 40px;
+    margin-bottom: 5px;
+}
+
+.best-for-pr {
+    background-color: #fff70052;
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 1px solid #fff70081;
+    border-radius: 40px;
+    margin-bottom: 5px;
+}
+
+.hire-card-ba hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #00bfff31;
+    border-radius: 10px;
+}
+
+.hire-card-st hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #ffffff31;
+    border-radius: 10px;
+}
+
+.hire-card-pr hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: #ffffff5e;
+    border-radius: 10px;
+}
+
+.hire-benefits-holder {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: transparent;
+}
+
+.hire-benefit {
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.hire-benefit p {
+    margin-top: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.hire-benefit svg {
+    width: 20px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.price-container h1 {
+    font-size: 30px;
+    font-weight: 900;
+    background-color: transparent;
+}
+
+.price-container p {
+    font-size: 14px;
+}
+
+.choose-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #00bfff36;
+    border: 1px solid #00bfff59;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.choose-btn-st {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #ffffff36;
+    border: 1px solid #fdfdfd59;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.choose-btn-pr {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgba(253, 252, 252, 0.487);
+    border: 1px solid #e9e9e9;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: .2s ease;
+
+}
+
+.choose-btn:hover {
+    background-color:  #00bfff5b;
+}
+
+.choose-btn-st:hover {
+    background-color:  #ffffff5b;
+}
+
+.choose-btn-pr:hover {
+    color: #6c7003;
+    background-color:  #ffffff;
+    box-shadow: 0 0 30px #f6ff003c;
+}
+
+.no-service {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.466);
+    font-weight: 600;
+}
+
+.notification {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #2d1958;
+    margin-top: 10px;
+    margin-bottom: -50px;
+    font-size: 13px;
+    border: 1px solid #422978;
+}
+
+.update-notification a{
+    text-decoration: none;
+    color: #c8a3f0;
+}
+
+.update-notification a:hover{
+    text-decoration: underline;
+}
+
+.notification svg {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.notification svg:hover {
+    background-color: #26164a;
+}
+
+.update-notification {
+    background-color: transparent;
+
 }
 
 @media(max-width: 1000px){
