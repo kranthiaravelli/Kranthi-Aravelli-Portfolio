@@ -34,3 +34,12 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+const notification = document.getElementById('noti');
+const closeNotification = document.getElementById('close-notification');
+
+
+closeNotification.addEventListener('click', function() {
+    notification.style.display = 'none';
+})
