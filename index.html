@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kranthi Aravelli | Frontend Developer | A CSE Student</title>
+    <title>Kranthi Aravelli | Aspiring Software Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="favicon" href="Images/favicon-32x32.png">
 
@@ -19,34 +19,41 @@
 </head>
 <body>
     <nav>
-        <h1>Kranthi <span>Aravelli</span></h1>
+        <h1>Kranth<span>i</span></h1>
 
         <div class="menu-toggle" id="menu-toggle">
             <svg onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
         </div>
-        
+
         <div class="nav_elements" id="nav-elements">
             <li><a href="#" class="selected">Home</a></li>
-            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#github">GitHub</a></li>
             <li><a href="#achievements">Achievements</a></li>
-            <li><a href="assets/hire.html">Services</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="assets/more.html#terms-and-conditions">More</a></li>
-            <li><a href="assets/resume.html"><button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>Resume</button></a></li>
+            <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">About</a></li>
+            <li><a href="../assets/resources.html">Resources</a></li>
+            <!-- <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">Services</a></li> -->
+            <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">More</a></li>
+            <li><a href="#" onclick="alert('Resume will be uploaded soon.')"><button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>Resume</button></a></li>
         </div>
     </nav>
 
     <p class="alert">Please open this site on Desktop for better experience, I am making improvements to make it compatible on all devices.</p>
 
-    <div class="notification" id="noti">
-        <span class="update-notification">You can now give me a feedback regarding my site. Navigate through the More section you would find a Feedback Link or click here <a href="https://forms.gle/E42D8XHRazhga8ut9" target="_blank">Feedback</a>.</span>
-        <svg id="close-notification" onclick="closeNoti()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-    </div>
+    <section id="v2-section">
+        <h2>Welcome to</h2>
+        <h1 class="main-h1">My Creative</h1>
+        <h1 class="main2-h1">Space</h1>
+        <div class="v2-btn-class-1">
+            <a href="#leet-container"><button class="v2-btn-1">Explore</button></a>
+            <a href="#projects"><button class="v2-btn-2">Portfolio</button></a>
+        </div>
+        <h1 class="light">Explore</h1>
 
-    <div class="hero">
+    </section>
+    <!-- <div class="hero">
         <div class="hero-wrap">
             <div class="hero_left">
                 <p class="main">Frontend Developer | CSE Student</p>
@@ -70,13 +77,13 @@
                 <a href="#contact"><button><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>Contact Me</button></a>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="leet-container">
+    <div class="leet-container" id="leet-container">
         <div class="leet">
             <h1>LeetCode</h1>
-            <span>2+</span>
+            <span>4+</span>
             <p>Problems solved</p>
         </div>
 
@@ -88,7 +95,7 @@
 
         <div class="leet">
             <h1>Other Problems</h1>
-            <span>30+</span>
+            <span>34+</span>
             <p>Problems solved</p>
         </div>
     </div>
@@ -111,108 +118,136 @@
 
     <section id="skills">
         <h1>Tech Stack</h1>
+        <h2 class="light">Tech<br>nology</h2>
         <div class="skills_main">
+            <div class="skills-cards">
+                <h1>Java<span>Recently added</span></h1>
+                <p>Understanding the Object Oriented programming in Java. As a part of our syllabus, Java is becoming amazing when attempted to create real world applications using OOPJ.</p>
+                <h4>Started</h4>
+            </div>
+            <div class="skills-cards">
+                <h1>MySQL<span>Recently added</span></h1>
+                <p>MySQL which takes me into the field of databases and data storage. I was introduced to this in our college and now looking forward to get proficient in this skill.</p>
+                <h4>Started</h4>
+            </div>
             <div class="skills-cards">
                 <h1>HTML</h1>
                 <p>I am fluent in structuring webpages, making sure of the hierarchy of the texts, which makes user easy to read and understand the content displayed.</p>
-                <img src="Images/html5-2.svg" alt="html logo" width="50px" style="margin-top: 10px; margin-bottom: 10px;">
                 <h4>Advanced</h4>
             </div>
             <div class="skills-cards">
                 <h1>CSS</h1>
                 <p>I am quite good in styling webpages, focusing on making good UIs which makes user stick onto the sites when visited. Though learning dynamicness, very proficient in styling.</p>
-                <img src="Images/css-4.svg" alt="css logo" width="50px" style="margin-top: 10px; margin-bottom: 10px;">
-                <h4>Intermediate</h4>
+                <h4>Advanced</h4>
             </div>
             <div class="skills-cards">
                 <h1>JavaScript</h1>
                 <p>Openly speaking, I am currently learning JavaScript, it's been years since I started, but still in the basics. Not because of my incapability of understanding, because I did not get the time like I got to learn HTML and CSS. Looking forward to play with the code in JavaScript.</p>
-                <img src="Images/javascript-2.svg" alt="js logo" width="50px" style="margin-top: 10px; margin-bottom: 10px;">
-                <h4>Learning</h4>
+                <h4>Intermediate</h4>
             </div>
             <div class="skills-cards">
                 <h1>C Language</h1>
                 <p>Honestly this was my first computer programming language I've learnt because our College taught this in our first semester. I became habituated to fundamentals like variables, loops and all through this. So I can code well in C.</p>
-                <img src="Images/c-1.svg" alt="js logo" width="50px" style="margin-top: 10px; margin-bottom: 10px;">
                 <h4>Intermediate</h4>
             </div>
             <div class="skills-cards">
                 <h1>Python</h1>
                 <p>Python was the second programming language that I've learnt, After learning the fundamentals in C, Python became smooth and I was able to understand the core background behind the in built functions. Can code better in Python.</p>
-                <img src="Images/python-5.svg" alt="js logo" width="50px" style="margin-top: 10px; margin-bottom: 10px;">
                 <h4>Intermediate</h4>
             </div>
             <div class="skills-cards">
                 <h1>GitHub</h1>
                 <p>Often felt confusing in the beginning that why do software professionals user GitHub, also was puzzled between Git and GitHub. But now I can create Repos in GitHub and update the files and deploy them using GitHub actions. Not Advanced but yes, I'm good at it.</p>
-                <img src="Images/github-icon-1.svg" alt="js logo" width="50px" style="margin-top: 10px; margin-bottom: 10px;">
                 <h4>Learning</h4>
             </div>
             <div class="skills-cards">
                 <h1>Communication</h1>
                 <p>Getting myself open to the world to showcase my skills, As an engineer I feel, soft skills are equally important as the technical skills. So I started to focus on my soft skills right from the day one of my B.Tech Career.</p>
-                <img src="Images/undraw_male-athlete-avatar_dabn.svg" alt="js logo" width="80px" style="margin-top: 10px; margin-bottom: 10px;">
                 <h4>Fluent</h4>
             </div>
-            <div class="skills-cards-span">
+            <!-- <div class="skills-cards-span">
                 <p>Working on more skills.</p>
-            </div>
+            </div> -->
             
         </div>
     </section>
 
     <section id="projects">
         <h1>Projects</h1>
+        <p class="projects-para">This section is presented here to display best projects. See all of my portfolio in the dedicated portfolio section.</p>
+        <h2 class="light">Portfolio</h2>
         
         <div class="projects_holder">
 
-        <h3 style="color: white; font-size: 30px; margin-bottom: -20px; padding-left: 3px; margin-top: 20px; display: flex; align-items: center; gap: 16px;">Featured Projects <span style="display: flex; justify-content: center; align-items: center; font-size: 15px; margin-top: 5px; background-color: transparent; width: 23px; border-radius: 50%; border: 2px solid white; cursor: pointer;" title="The projects showcased here are the ones successfully completed working on. Scroll down to see what are the upcoming planned projects.">i</span></h3>
+        <!-- <h3 style="color: white; font-size: 30px; margin-bottom: -20px; padding-left: 3px; margin-top: 20px; display: flex; align-items: center; gap: 16px;">Featured Projects <span style="display: flex; justify-content: center; align-items: center; font-size: 15px; margin-top: 5px; background-color: transparent; width: 23px; border-radius: 50%; border: 2px solid white; cursor: pointer;" title="The projects showcased here are the ones successfully completed working on. Scroll down to see what are the upcoming planned projects.">i</span></h3> -->
         
             <div class="project_cards">
+                    <span>Recent</span>
                 <div class="pro-info">
-                    <div class="pro-title-container">
+                    <div class="title-wrapper">
+                        <div class="pro-title-container">
                             <h2>Training a Machine Learning Model</h2>
-                            <p class="pro-label" title="This project was successfully planned to start and add the details to this portfilio page.">Recent</p>
+                            <!-- <p class="pro-label" title="This project was successfully planned to start and add the details to this portfilio page.">Recent</p> -->
                         </div>
-                    <p class="label">Python Data Science Project</p>
-                    <p class="description">Limitless Pre Schools are one of the Emerging Primary School in Hyderabad. Founded by Mr. Jaya Prakash Paul, He was our sir when I used to study in my school, did not even expect that he would become a chairman for such an amazing school. I tried making a website for his school. Gathering the information about that was quite challenging but finally, this is how it worked out. Check that out. Remember They are not responsive!</p>
+                        <p class="label">Python Data Science Project</p>
+                    </div>
+                    <p class="description">I started exploring Machine Learning by training my first models using real-world datasets. I worked on preparing the data, selecting suitable algorithms, training the models, and evaluating their performance. <br><br>This project helped me understand how a machine learning model actually learns from data.</p>
                     <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  Python  |  Pandas  |  Scikit-Learn</p>
                     <p class="proj_info">Repository link not yet uploaded.<!---Find Repository Link in <a href="#github">GitHub</a> Section.---></p>
                     <div class="btns">
                         <a href="#projects" onclick="alert('Code will be available soon.')"><button class="btn">Source Code</button></a>
                     </div>
                 </div>
-                <div class="pro-image">
-                    <h1 style="letter-spacing: -2px;">ML Model.</h1>
-                </div>
+                <!-- <div class="pro-image">
+                    <h1 style="letter-spacing: -2px;">ML Model.</h1> 
+                </div> -->
             </div>    
 
-            <div class="project_cards">
-                <div class="pro-info">
-                    <div class="pro-title-container">
-                        <h2>OnePlus Buds Landing Page</h2>
-                        <p class="pro-label">Recommended to Look</p>
+            <div class="card-wrapper">
+                <div class="project_cards">
+                    <span>Recommended</span>
+                    <div class="pro-info">
+                        <div class="title-wrapper">
+                            <div class="pro-title-container">
+                                <h2>OnePlus Buds Landing Page</h2>
+                                <!-- <p class="pro-label">Recommended to Look</p> -->
+                            </div>
+                            <p class="label">Responsive Frontend Web Project</p>
+                        </div>
+                        <p class="description">This project was created during my first semester as part of my ECS Project. We were asked to follow either the Waterfall or Agile approach, so I gathered the requirements first, designed the layout in Figma, and then developed the website using HTML & CSS.
+
+    <br><br>This project also helped me get much better at using CSS media queries and building responsive websites.
+
+    <br><br>Check it out — this one is responsive!
+    </p>
+                        <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
+                        <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                        <div class="btns">
+                            <a href="https://kranthiaravelli.github.io/One-Plus-Buds-Landing-Page-Project/" target="_blank" title="Visit the website in New Tab"><button class="btn">Visit Site</button></a>
+                            <a href="https://github.com/kranthiaravelli/One-Plus-Buds-Landing-Page-Project/blob/main/index.html" target="_blank" title="Go to source code in GitHub"><button class="btn">Source Code</button></a>
+                            <a href="assets/Project Document - OnePlus Landing Web Page by Kranthi Aravelli.pdf" target="_blank" title="View project document PDF"><button class="btn">Project Document</button></a>
+                        </div>
                     </div>
-                    <p class="label">Responsive Frontend Web Project</p>
-                    <p class="description">This project was done during my first semester for my ECS Project. Our teacher asked us to make some projects by following any of the project approaches, waterfall approach or agile approach. I gathered all the requirements before making the project, designed the layout of the site using UI tools like Figma, Started developing using HTML & CSS. I've got good at using media queries in CSS by the time of this project. Just check it out once. This Website is responsive!</p>
-                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
-                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
-                    <div class="btns">
-                        <a href="https://kranthiaravelli.github.io/One-Plus-Buds-Landing-Page-Project/" target="_blank" title="Visit the website in New Tab"><button class="btn">Visit Site</button></a>
-                        <a href="https://github.com/kranthiaravelli/One-Plus-Buds-Landing-Page-Project/blob/main/index.html" target="_blank" title="Go to source code in GitHub"><button class="btn">Source Code</button></a>
-                        <a href="assets/Project Document - OnePlus Landing Web Page by Kranthi Aravelli.pdf" target="_blank" title="View project document PDF"><button class="btn">Project Document</button></a>
-                    </div>
-                </div>
-                <div class="pro-image">
-                    <a href="Images/oneplus.png" target="_blank"><img src="Images/oneplus.png" alt="OnePlus Buds Webpage Image"></a>
+                    <!-- <div class="pro-image"> -->
+                        <!-- <a href="Images/oneplus.png" target="_blank"><img src="Images/oneplus.png" alt="OnePlus Buds Webpage Image"></a> -->
+                    <!-- </div> -->
                 </div>
             </div>
 
             <div class="project_cards">
                 <div class="pro-info">
-                    <h2>Google Clone</h2>
-                    <p class="label">Frontend Web Project</p>
-                    <p class="description">Google Home Page looks cool to recreate, So I tried cloning Google Home Page. This was my first cloning webpage of a real world website. I tried my best as a learner in the beginning, to match the exact positions of the buttons, input box, background image and Google Logo. Finally It was great in my eyes. Just Have a look at once. Remember They are not responsive!</p>
+                    <div class="title-wrapper">
+                        <h2>Google Clone</h2>
+                        <p class="label">Frontend Web Project</p>
+                    </div>
+                    <p class="description">Google’s Home Page looked cool to recreate, so I gave it a try! This was my first attempt at cloning a real-world website.
+
+<br><br>As a beginner, I focused on matching the positions of the buttons, search box, background, and Google logo as closely as possible.
+
+<br><br>It turned out great for a first attempt. Have a look!
+
+Note: The website is not responsive yet.
+</p>
                     <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  GitHub</p>
                     <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
                     <div class="btns">
@@ -220,44 +255,42 @@
                         <a href="https://github.com/kranthiaravelli/Google-Clone-Website/blob/main/index.html" target="_blank"><button class="btn">Source Code</button></a>
                     </div>
                 </div>
-                <div class="pro-image">
-                    <a href="Images/google.png" target="_blank"><img src="Images/google.png" alt="Google Clone Site Image"></a>
-                </div>
+                <!-- <div class="pro-image"> -->
+                    <!-- <a href="Images/google.png" target="_blank"><img src="Images/google.png" alt="Google Clone Site Image"></a> -->
+                <!-- </div> -->
             </div>
-
-            <div class="project_cards">
-                <div class="pro-info">
-                    <h2>Restaurant Web Page</h2>
-                    <p class="label">Frontend Web Project</p>
-                    <p class="description">Comer Restaurant is a Concept Brand which offer its services through online Menu Bookings. This is a concept brand created by myself and I made a landing webpage for the restaurant. I used HTML & CSS to create this webpage, This is the basic project that I made during my practice of the Frontend Part. Remember They are not responsive!</p>
-                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
-                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
-                    <div class="btns">
-                        <a href="https://kranthiaravelli.github.io/Comer-Restaurant-Menu-Page/" target="_blank"><button class="btn">Visit Site</button></a>
-                        <a href="https://github.com/kranthiaravelli/Comer-Restaurant-Menu-Page/blob/main/index.html" target="_blank"><button class="btn">Source Code</button></a>
-                    </div>
-                </div>
-                <div class="pro-image">
-                    <a href="Images/comer.png" target="_blank"><img src="Images/comer.png" alt="Google Clone Site Image"></a>
-                </div>
-            </div>
-        
-            <div class="project_cards">
-                <div class="pro-info">
-                    <h2>Limitless Schools Website</h2>
-                    <p class="label">Frontend Web Project</p>
-                    <p class="description">Limitless Pre Schools are one of the Emerging Primary School in Hyderabad. Founded by Mr. Jaya Prakash Paul, He was our sir when I used to study in my school, did not even expect that he would become a chairman for such an amazing school. I tried making a website for his school. Gathering the information about that was quite challenging but finally, this is how it worked out. Check that out. Remember They are not responsive!</p>
-                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
-                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
-                    <div class="btns">
-                        <button class="btn" style="cursor: no-drop; background-color: rgba(254, 254, 254, 0.128);" title="Site not disclosed to visit">Visit Site</button>
-                        <button class="btn" style="cursor: no-drop; background-color: rgba(254, 254, 254, 0.128);" title="No source code available">Source Code</button>
-                    </div>
-                </div>
-                <div class="pro-image">
-                    <a href="Images/limitless.png" target="_blank"><img src="Images/limitless.png" alt="Google Clone Site Image"></a>
-                </div>
-            </div>
+<!--
+                            <div class="project_cards">
+                                <div class="pro-info">
+                                    <div class="title-wrapper">
+                                        <h2>Restaurant Web Page</h2>
+                                        <p class="label">Frontend Web Project</p>
+                                    </div>
+                                    <p class="description">Comer Restaurant is a Concept Brand which offer its services through online Menu Bookings. This is a concept brand created by myself and I made a landing webpage for the restaurant. I used HTML & CSS to create this webpage, This is the basic project that I made during my practice of the Frontend Part. Remember They are not responsive!</p>
+                                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
+                                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                                    <div class="btns">
+                                        <a href="https://kranthiaravelli.github.io/Comer-Restaurant-Menu-Page/" target="_blank"><button class="btn">Visit Site</button></a>
+                                        <a href="https://github.com/kranthiaravelli/Comer-Restaurant-Menu-Page/blob/main/index.html" target="_blank"><button class="btn">Source Code</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="project_cards">
+                                <div class="pro-info">
+                                    <div class="title-wrapper">
+                                        <h2>Limitless Schools Website</h2>
+                                        <p class="label">Frontend Web Project</p>
+                                    </div>
+                                    <p class="description">Limitless Pre Schools are one of the Emerging Primary School in Hyderabad. Founded by Mr. Jaya Prakash Paul, He was our sir when I used to study in my school, did not even expect that he would become a chairman for such an amazing school. I tried making a website for his school. Gathering the information about that was quite challenging but finally, this is how it worked out. Check that out. Remember They are not responsive!</p>
+                                    <p class="pro_skills" style="white-space: pre-wrap;">Skills Used:  HTML  |  CSS  |  Content Writing  |  GitHub</p>
+                                    <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                                    <div class="btns">
+                                        <button class="btn" style="cursor: no-drop; background-color: rgba(254, 254, 254, 0.128);" title="Site not disclosed to visit">Visit Site</button>
+                                        <button class="btn" style="cursor: no-drop; background-color: rgba(254, 254, 254, 0.128);" title="No source code available">Source Code</button>
+                                    </div>
+                                </div>
+                            </div>  
 
             <h3 style="color: white; font-size: 36px; margin-bottom: -20px; padding-left: 3px; margin-top: 20px;">Planned Projects</h3>
             
@@ -270,32 +303,50 @@
                             <p class="pro-label" style="background-color: rgb(222, 231, 245); color: rgb(0, 94, 255); cursor: default;" title="This project was successfully planned to start and add the details to this portfilio page.">Planned</p>
                         </div>
                         <p class="label" style="white-space: pre-wrap;">Python Data Science Project  |  Full Stack Project</p>
-                        <p class="description" style="color: gray; font-style: italic;">No Description available.</p>
+                        <p class="description" style="color: rgba(255, 255, 255, 0.342); font-style: italic;">No Description available.</p>
                         <p class="pro_skills" style="white-space: pre-wrap;">Skills Used: N/A</p>
                         <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
                         <div class="btns">
                             <button class="btn" style="cursor: no-drop; background-color: rgba(254, 254, 254, 0.128);" title="No details available">View Details</button>
                         </div>
                     </div>
-                    <div class="pro-image">
-                        <!-- <a href="Images/limitless.png" target="_blank"><img src="Images/limitless.png" alt="Google Clone Site Image"></a> -->
+                </div>
+
+                <div class="project_cards">
+                    <div class="pro-info">
+                        <div class="pro-title-container">
+                            <h2>Full Stack Project on E-Commerce Platform</h2>
+                            <p class="pro-label" style="background-color: rgb(222, 231, 245); color: rgb(0, 94, 255); cursor: default;" title="This project was successfully planned to start and add the details to this portfilio page.">Planned</p>
+                        </div>
+                        <p class="label" style="white-space: pre-wrap;">Full Stack Project</p>
+                        <p class="description" style="color: rgba(255, 255, 255, 0.342); font-style: italic;">No Description available.</p>
+                        <p class="pro_skills" style="white-space: pre-wrap;">Skills to be used: N/A</p>
+                        <p class="proj_info">Find Repository Link in <a href="#github">GitHub</a> Section.</p>
+                        <div class="btns">
+                            <button class="btn" style="cursor: no-drop; background-color: rgba(254, 254, 254, 0.128);" title="Details will be shared shortly.">View Details</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>  -->
 
-        </div>
+        </div> 
         <p class="info">About to work on more projects, Will keep this site updated.</p>
     </section>
 
     <section id="github">
-        <div class="main-logo">
-            <a href="https://github.com/kranthiaravelli/" target="_blank" title="Visit GitHub Profile"><img src="Images/github-white-icon.svg" alt="GitHub Logo"></a>
+        <span class="light">GitHub</span>
+        <div class="git-wrapper">
+            <div class="main-logo">
+                <a href="https://github.com/kranthiaravelli/" target="_blank" title="Visit GitHub Profile"><img src="Images/github-white-icon.svg" alt="GitHub Logo"></a>
+            </div>
+            <div class="main-text-gh">
+                <h1>Kranthi Aravelli</h1>
+                <p class="into-text">
+                    My GitHub profile contains all my frontend projects, practice work, and learning-based builds. It reflects my progress as a developer and my consistency in building real projects.
+                </p>
+                <a href="https://github.com/kranthiaravelli/" target="_blank"><button>Visit GitHub</button></a>
+            </div>
         </div>
-
-        <p class="into-text">
-        My GitHub profile contains all my frontend projects, practice work, and learning-based builds.
-        It reflects my progress as a developer and my consistency in building real projects.
-        </p>
 
         <div class="leet-container">
             <div class="leet">
@@ -312,7 +363,7 @@
 
             <div class="leet">
                 <h1>Contributions</h1>
-                <span>140+</span>
+                <span>190+</span>
                 <p>Last year</p>
             </div>
         </div>
@@ -343,24 +394,32 @@
 
     
     <section id="achievements">
+        <span class="light">Journey</span>
         <h1>Achievements</h1>
         <div class="achieve-container">
             
             <div class="achieve-cards">
+                <h2>Smart India Hackathon 2026</h2>
+                <p>In-College Internal Hackathon<span>Recently added</span></p>
+                <p class="organisers">Organised by: SPOC of KMIT</p>
+                <p class="achieve-info">Problem statement: SIH26043 <br>Gained and experience in working with the team of 6 from our class. Even though the competition was tough we did our best, held many meetings, improved a lot of communication. Overall this was a different experience had in our second year. This internal hackathon was conducted on 16 September, 2026. Looking forward towards SIH 2027.</p>
+                <p class="time">Published on 18 Sep, 2026</p>
+                <div class="achieve-btns">
+                    <button id="no-certificate" title="No Certificate">Certificate</button>
+                    <span id="norice-para">No certification is issued yet.</span>
+                </div>
+            </div>
+            
+            <div class="achieve-cards-2">
                 <h2>Codenovate 2.0 - 24 Hrs Hackathon</h2>
-                <p>In College Hackathon</p>
+                <p><span>Complete</span>In College Hackathon</p>
                 <p class="organisers">Organised by: Recurse, The Technical Club of KMIT</p>
                 <p class="achieve-info">Feeling so glad to share one of my experiences during my first sem, participating in 24 Hrs Hackathon. More than securing the medal or the first place in the hackathon, it was my experience participating in the hackathon that what I have achieved. This experience was wonderful. will definitely share the complete details and brief description on my experience soon. Have a look at my participation certificate.</p>
                 <p class="time">Published on 13 Jun, 2026</p>
                 <div class="achieve-btns">
                     <a href="assets/A Kranthi Kumar.pdf" target="_blank" title="View Cetificate"><button class="btn">Certificate</button></a>
                 </div>
-            </div>            
-
-            <div class="achieve-cards-span">
-                <p>Looking forward to participate in more events.</p>
             </div>
-        
         </div>
     </section>
 
@@ -384,9 +443,9 @@
                 </div>
             </div>
             
-            <div class="contact-img">
+            <!-- <div class="contact-img">
                 <img src="Images/undraw_nfc-sharing_tt2d.svg" alt="Contact Illustration" width="300px">
-            </div>
+            </div> -->
 
         </div>
         <p class="info_last">I will try to respond within 24 Hrs. Thank you for your patience.</p>
@@ -401,7 +460,7 @@
     <div class="foot-holder">
         <div class="foot-left">
             <h1>Kranthi Aravelli</h1>
-            <p>Developed by Kranthi Aravelli <br>&copy 2026 Kranthi Aravelli. All Rights Reserved.</p>
+            <p>Website Designed & Developed by Kranthi Aravelli <br>&copy 2026 Kranthi Aravelli. All Rights Reserved.</p>
             <div class="foot-social-links">
                 <a href="https://www.instagram.com/itskranthiofficial/" target="_blank">Instagram</a>
                 <a href="https://kranthiaravelli.github.io/Kranthi-Aravelli-Portfolio/" target="_blank">Website</a>
@@ -441,5 +500,7 @@
         <a href="#">Accessibility</a>
         <a href="assets/updates.html">Updates</a>
     </div>
+
+    <span class="final-light">Kranthi</span>
 </footer>
 </html>
