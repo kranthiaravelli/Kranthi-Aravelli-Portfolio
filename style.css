@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -13,10 +16,10 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Recursive";
+    font-family: "Plus Jakarta Sans";
     -webkit-tap-highlight-color: transparent;
-    background: #000320;
-    color: white;
+    background: white;
+    color: black;
 
 }
 
@@ -27,13 +30,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    background-color: #00031a;
+    background-color: #f4f4f4;
     /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.349); */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.13); */
     position: sticky;
     top: 0;
     z-index: 1000;
-    color: white;
+    color: rgba(0, 0, 0, 0.354);
 }
 
 nav .nav-logo{
@@ -46,12 +49,14 @@ nav h1 {
     font-size: 22px;
     cursor: pointer;
     background-color: transparent;
-    color: rgb(205, 124, 248);
+    color: black;
+    font-family: 'Sora';
 }
 
 nav h1 span {
-    color: white;
-    font-weight: 300;
+    color: #e45e54;
+    font-weight: 800;
+    font-family: 'IBM Plex Mono';
     background-color: transparent;
 }
 
@@ -69,32 +74,34 @@ nav .nav_elements li {
 
 nav .nav_elements li a{
     text-decoration: none;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.565);
     transition: .2s ease;
     background-color: transparent;
 }
 
 nav li a:hover {
-    color: rgb(205, 124, 248);
+    color: black;
 }
 
 .nav-btn {
-    padding: 7px 20px;
-    background: linear-gradient(45deg, #ff007f, #7f00ff);
+    padding: 5px 15px;
+    background-color: black;
     border: none;
+    font-size: 12px;
     border-radius: 4px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    color: white;
     transition: .2s ease;
 }
 
 .nav-btn svg {
     background-color: transparent;
-    width: 18px;
+    width: 15px;
 }
 
 .nav-btn:hover {
@@ -349,9 +356,9 @@ nav li a:hover {
 }
 
 .nav_elements .selected {
-    color: rgb(205, 124, 248);
-    font-weight: 500;
-    text-decoration: underline;
+    color: black;
+    font-weight: 800;
+    /* text-decoration: underline; */
     text-underline-offset: 10px;
 }
 
@@ -385,14 +392,15 @@ nav li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 100px;
-    background-color: #130730;
+    margin-top: 50px;
+    background-color: transparent;
     padding: 20px;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-    border: 1px solid #cbb3e423;
+    border: 1px solid transparent;
+    scroll-margin-top: 120px;
 }
 
 .leet_mid {
@@ -407,6 +415,7 @@ nav li a:hover {
     cursor: pointer;
     opacity: 100%;
     background-color: transparent;
+    cursor: default;
 }
 
 .leet_mid h1{
@@ -435,6 +444,7 @@ nav li a:hover {
     cursor: pointer;
     opacity: 100%;
     background-color: transparent;
+    cursor: default;
 }
 
 .leet p, .leet_mid p {
@@ -446,11 +456,11 @@ nav li a:hover {
 }
 
 .leet:first-child {
-    border-right: 1px solid #cbb3e423;
+    border-right: 1px solid #4c4c4c23;
 }
 
 .leet:last-child {
-    border-left: 1px solid #cbb3e423;
+    border-left: 1px solid #4c4c4c23;
 }
 
 .leet h1 {
@@ -542,38 +552,48 @@ nav li a:hover {
     height: auto;
     scroll-margin-top: 80px;
     background: transparent;
-    padding: 120px 0;
+    padding: 120px 0 0 0;
+}
+
+#skills:hover h1 {
+    font-weight: 600;
 }
 
 #skills h1 {
-    font-size: 50px;
+    font-size: 60px;
     padding-left: 80px;
-    color: white;
+    color: black;
+    font-family: 'Sora';
+    font-weight: 300;
+    letter-spacing: -4px;
     background-color: transparent;
-    font-weight: 900;
+    transition: .5s ease;
 }
 
 .skills_main {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 30px;
-    padding: 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 80px 0 80px;
 }
 
 .skills-cards {
-    width: 100%;
+    max-width: 700px;
     height: auto;
-    background-color: #130730;
-    border: 1px solid #2b1a53;
-    border-radius: 8px;
+    background-color: transparent;
     display: flex;
     flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.146);
+    align-items: flex-start;
+    border-bottom: 1px solid black;
+    /* border-left: 2px solid black; */
+    border-image: linear-gradient(to right,#f4f4f4, black, #f4f4f4) 1; 
+
+    
+    padding: 20px 20px;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.146); */
     cursor: default;
     transition: .3s ease;
     opacity: 100%;
@@ -585,17 +605,42 @@ nav li a:hover {
 .skills-cards:hover {
     transform: scale(1.02);
     opacity: 100%;
-    box-shadow: 0 0 50px #28145755;
+    box-shadow: 0 0 10px #a6a6a655;
+    transform: translateX(20px);
 }
 
-
+.skills-cards:hover .skills-cards h1 {
+    font-weight: 800;
+}
 
 #skills .skills-cards h1 {
-    font-size: 27px;
+    width: 100%;
+    font-size: 34px;
     padding-left: 0;
     background-color: transparent;
-    color: white;
+    color: black;
     font-weight: 600;
+    letter-spacing: -1px;
+    font-family: 'Source Code Pro';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-cards h1 span {
+    font-size: 7px;
+    letter-spacing: 0;
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.759);
+    padding: 3px 6px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.skills-cards h4 {
+    width: 100%;
+    font-size: 12px;
 }
 
 .skills-cards img,h4 {
@@ -606,9 +651,9 @@ nav li a:hover {
     font-size: 11px;
     padding-bottom: 10px;
     padding-top: 10px;
-    text-align: center;
+    text-align: left;
     background-color: transparent;
-    color: rgba(228, 224, 248, 0.749);
+    color: rgba(0, 0, 0, 0.633);
 }
 
 .skills-cards-span {
@@ -617,6 +662,20 @@ nav li a:hover {
     justify-content: center;
     align-items: center;
     color: rgba(0, 0, 0, 0.374);
+}
+
+#skills .light {
+    font-size: 200px;
+    font-weight: 300;
+    letter-spacing: -20px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    user-select: none;
+    line-height: 170px;
+    text-align: right;
+    margin-top: 400px;
+    opacity: 20%;
 }
 
 /* Projects Section */
@@ -633,47 +692,94 @@ nav li a:hover {
     color: white;
 }
 
+#projects:hover h1 {
+    font-weight: 600;
+}
+
 #projects h1 {
     text-align: left;
     padding: 0 80px;
-    font-size: 50px;
-    font-weight: 900;
+    font-size: 60px;
+    font-weight: 300;
     background-color: transparent;
-    color: white;
+    color: black;
+    font-family: 'Sora';
+    letter-spacing: -4px;
+    transition: .5s ease;
+    z-index: 2;
+}
+
+#projects .light {
+    left: 0;
+    margin-top: -220px;
+    opacity: 0.091;
+    background: linear-gradient(to bottom, black, transparent);
+  
+    /* 2. Clip the background to the text shape */
+    background-clip: text;
+    -webkit-background-clip: text; /* Required for Safari and Chrome support */
+  
+    /* 3. Make the text transparent so the background shows through */
+    color: transparent;
+
+}
+
+#projects .projects-para {
+    padding: 0 80px;
+    max-width: 600px;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 10px;
 }
 
 .projects_holder {
     width: 100%;
     height: auto;
-    padding: 30px 80px;
+    padding: 30px 60px;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    /* flex-direction: column; */
+    gap: 20px;
+    background-color: transparent;
+    overflow: hidden;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.title-wrapper {
     background-color: transparent;
 }
 
 .project_cards {
     width: 100%;
+    max-width: 400px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #24134b;
-    background-color: #130730;
+    border: 1px solid rgba(0, 0, 0, 0.064);
+    background-color: #f3f3f3;
     color: white;
     border-radius: 8px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 80px;
-    box-shadow: 1px 1px 5px rgba(15, 15, 15, 0.444);
+    /* box-shadow: 1px 1px 5px rgba(15, 15, 15, 0.444); */
     transition: .3s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.project_cards:hover {
+    transform: scale(1.005) translate(0, -15px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.158);
 }
 
 .project_cards h2 {
-    font-size: 21px;
+    font-size: 25px;
     font-weight: 600; 
     background-color: transparent;   
+    font-family: 'Google Sans';
 }
 
 .pro-title-container {
@@ -693,13 +799,10 @@ nav li a:hover {
 
 .project_cards .label {
     font-size: 12px;
-    margin-top: 3px;
-    color: grey;
+    margin-top: 7px;
+    color: rgba(0, 0, 0, 0.535);
     background-color: transparent;
 }
-
-
-
 
 .pro_skills {
     font-size: 16px;
@@ -728,11 +831,37 @@ nav li a:hover {
 .project_cards .description {
     font-size: 12px;
     max-width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     letter-spacing: 0;
     line-height: 17px;
     background-color: transparent;
-    color: #dfd8ef;
+    color: rgba(0, 0, 0, 0.686);
+}
+
+.project_cards span {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    font-size: 7px;
+    top: 0;
+    padding: 3px 6px;
+    background-color: rgba(0, 0, 0, 0.694);
+    color: white;
+    border-radius: 7px 7px 7px 7px;
+    transition: .5s ease;
+    margin: 6px;
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.pro-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-grow: 1;
 }
 
 .project_cards .pro-info .proj_info {
@@ -745,7 +874,7 @@ nav li a:hover {
 }
 
 .pro-info a{
-    color: #cf9af0;
+    color: #e45e54;
     text-decoration: none;
     background-color: transparent;
 }
@@ -757,9 +886,10 @@ nav li a:hover {
 .info {
     font-size: 11px;
     text-align: center;
-    color: grey;
+    color: rgba(0, 0, 0, 0.307);
     font-weight: 200;
     background-color: transparent;
+    font-weight: 400;
 }
 
 .project_cards .btns{
@@ -779,14 +909,15 @@ nav li a:hover {
     color: white;
     border-radius: 3px;
     border: none;
-    background: #7f00ff;
+    background: #e45e54;
     border-radius: 4px;
     cursor: pointer;
     transition: .2s ease;
+    font-size: 12px;
 }
 
 .project_cards .btns button:hover {
-    background-color: #4e0498;
+    background-color: #c85249;
     color: white;
 }
 
@@ -820,16 +951,76 @@ nav li a:hover {
     padding: 0 80px;
 }
 
-.main-logo {
-    width: 100%;
+.git-wrapper {
+    width: 800px;
     display: flex;
+    justify-content: space-between;
+    background-color: black;
+    /* margin: 0 280px; */
+    padding: 30px;
+    border-radius: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .7s ease;
+}
+
+.git-wrapper h1 {
+    width: 100%;
+    color: #f4f4f4;
+    background-color: transparent;
+    font-family: 'Sora';
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.git-wrapper:hover {
+    width: 900px;
+}
+
+#github .light {
+    right: 50%;
+    z-index: 0;
+    margin-top: 300px;
+    opacity: 0.089;
+    background: linear-gradient(to bottom, #f4f4f4, black);
+    background-clip: text;
+    -webkit-background-clip: text; /* Required for Safari and Chrome support */
+  
+    /* 3. Make the text transparent so the background shows through */
+    color: transparent;
+}
+
+
+.main-logo {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 40px; */
+    padding: 0;
+    /* margin-top: 20px; */
+    background-color: transparent;
+}
+
+.main-text-gh {
+    background-color: transparent;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding-top: 40px;
-    margin-top: 20px;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.main-text-gh a {
+    width: fit-content;
 }
 
 .main-logo img{
-    width: 140px;
+    width: 300px;
+    background-color: transparent;
 }
 
 .main-logo a {
@@ -853,8 +1044,8 @@ nav li a:hover {
 .git-cards {
     width: auto;
     height: auto;
-    background-color: #130730;
-    border: 1px solid #281652;
+    background-color: #d4d3d3;
+    border: 1px solid transparent;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -862,7 +1053,7 @@ nav li a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.444);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
     text-align: center;
 
 }
@@ -876,13 +1067,13 @@ nav li a:hover {
 .git-cards a {
     font-size: 11px;
     text-decoration: none;
-    background-color: #281652;
+    background-color: black;
     padding: 8px 15px;
     width: 100%;
     text-align: center;
     color: white;
     border-radius: 5px;
-    transition: .1s ease;
+    transition: .2s ease;
 }
 
 .morerepos {
@@ -912,18 +1103,33 @@ nav li a:hover {
 }
 
 .git-cards a:hover {
-    background-color: #342063;
+    background-color: #e45e54;
 }
 
 #github .into-text {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    max-width: 800px;
-    margin-top: 30px;
-    font-size: 18px;
-    padding: 0 40px;
+    text-align: left;
+    max-width: 400px;
+    margin: 15px 0;
+    font-size: 15px;
+    padding: 0;
+    color: #f4f4f4e3;
+}
+
+.git-wrapper button {
+    font-size: 13px;
+    padding: 7px 20px;
+    background-color: #f4f4f4;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.git-wrapper button:hover {
+    background-color: #e45e54;
+    color: #f4f4f4;
 }
 
 .github-stats {
@@ -954,41 +1160,55 @@ nav li a:hover {
 
 #contact h1 {
     font-size: 50px;
-    font-weight: 900;
+    font-weight: 300;
+    font-family: 'Sora';
     padding-left: 80px;
     margin-bottom: 20px;
-    letter-spacing: -2px;
+    letter-spacing: -4px;
+    transition: .5s ease;
+}
+
+#contact:hover h1 {
+    font-weight: 600;
 }
 
 #contact h2 {
     padding-left: 80px;
     letter-spacing: -0px;
     font-weight: 400;
+    font-family: "Sora";
 }
 
 .contact-block {
+    width: 100%;
     margin-top: 30px;
-    border-left: 6px solid #6503c6;
+    border-left: 6px solid #e45e54;
     border-radius: 6px;
-    padding-left: 10px;
-    padding: 5px 10px;
+    padding-left: 20px;
+    padding: 5px auto;
+    transition: .3s ease;
+    cursor: default;
+}
+
+.contact-block:hover {
+    padding-left: 30px;
 }
 
 .contact-block h3 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 5px;
 }
 
 .contact-block p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
 }
 
 .contact-block a{
     text-decoration: none;
     font-weight: 400;
-    color: #6503c6;
+    color: #e45e54;
 }
 
 .contact-block a:hover {
@@ -999,7 +1219,7 @@ nav li a:hover {
     font-size: 12px;
     padding-left: 80px;
     margin-top: 40px;
-    color: rgba(255, 255, 255, 0.724);
+    color: rgba(0, 0, 0, 0.67);
 }
 
 .contact-holder {
@@ -1016,64 +1236,159 @@ nav li a:hover {
 }
 
 #achievements h1 {
-    font-size: 50px;
-    font-weight: 900;
-    letter-spacing: -1px;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: -5px;
     margin-top: 60px;
+    font-family: 'Sora';
+    transition: .5s ease;
+}
+
+#achievements:hover h1 {
+    font-weight: 600;
+}
+
+#achievements .light {
+    font-size: 250px;
+    margin-top: -150px;
+    background: linear-gradient(to bottom, black, #f4f4f4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    left: 0;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+#norice-para {
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+    display: none;
 }
 
 #achievements .achieve-container {
     width: 100%;
     height: auto;
-    background-color: #130730;
+    background-color: transparent;
     margin-top: 20px;
     border-radius: 10px;
-    border: 1px solid #23114b;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.227);
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    border: 1px solid transparent;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.227); */
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 #achievements .achieve-container .achieve-cards {
-    background-color: #24134b;
-    max-width: 400px;
+    background-color: transparent;
+    width: auto;
     height: 100%;
     border: 1px solid transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px 0;
     cursor: default;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.166);
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.166); */
     transition: .2s ease;
+    color: black;
 }
 
-#achievements .achieve-container .achieve-cards:hover {
-    border: 1px solid #cf9af0;
+.achieve-cards-2 {
+    background-color: transparent;
+    width: auto;
+    height: 100%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-radius: 10px;
+    padding: 10px 0;
+    cursor: default;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.166); */
+    transition: .2s ease;
+    color: black;
 }
 
 #achievements .achieve-container .achieve-cards h2 {
     background-color: transparent;
-    font-size: 25px;
+    font-size: 50px;
     margin-bottom: 8px;
-    font-weight: 900;
+    font-weight: 500;
+    letter-spacing: -3px;
+    font-family: 'Sora';
+    transition: .2s ease;
+}
+
+#achievements .achieve-container .achieve-cards-2 h2 {
+    background-color: transparent;
+    font-size: 50px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    letter-spacing: -3px;
+    font-family: 'Sora';
+    transition: .2s ease;
 }
 
 #achievements .achieve-container .achieve-cards p {
-    font-size: 13px;
+    font-size: 18px;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.859);
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#achievements .achieve-container .achieve-cards-2 p {
+    font-size: 18px;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 } 
 
+#achievements .achieve-container .achieve-cards p span {
+    font-size: 8px;
+    padding: 3px 8px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
+#achievements .achieve-container .achieve-cards-2 p span {
+    font-size: 8px;
+    padding: 3px 8px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    color: #f4f4f4;
+    font-weight: 600;
+}
+
 #achievements .achieve-container .achieve-cards .achieve-info {
-    font-size: 12px;
+    max-width: 900px;
+    font-size: 13px;
     margin-top: 10px;
-    color: rgba(255, 255, 255, 0.544);
+    color: black;
     font-weight: 300;
     background-color: transparent;
+    font-family: 'Sora';
+}
+
+#achievements .achieve-container .achieve-cards-2 .achieve-info {
+    max-width: 900px;
+    font-size: 13px;
+    margin-top: 10px;
+    color: black;
+    font-weight: 300;
+    background-color: transparent;
+    text-align: right;
+    font-family: 'Sora';
 }
 
 #achievements .achieve-container .achieve-cards-span {
@@ -1088,7 +1403,7 @@ nav li a:hover {
     background-color: transparent;
     max-width: 200px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.716);
+    color: black;
     font-weight: 200;
 }
 
@@ -1099,11 +1414,12 @@ nav li a:hover {
 
 .achieve-btns button {
     padding: 10px 20px;
-    background-color: #7f00ff;
+    background-color: #e45e54;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: .2s ease;
+    color: #f4f4f4;
 }
 
 .achieve-btns button:hover {
@@ -1112,9 +1428,18 @@ nav li a:hover {
 
 #achievements .achieve-container .achieve-cards .organisers {
     margin-top: 20px;
-    font-size: 13px;
-    color: white;
-    font-weight: 500;
+    font-size: 14px;
+    color: black;
+    font-family: 'Sora';
+    font-weight: 600;
+}
+
+#achievements .achieve-container .achieve-cards-2 .organisers {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Sora';
 }
 
 #achievements .achieve-container .achieve-cards .time {
@@ -1122,20 +1447,34 @@ nav li a:hover {
     font-weight: 300;
     margin-top: 8px;
     text-align: right;
-    color: rgba(255, 255, 255, 0.659);
+    color: rgba(0, 0, 0, 0.727);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#achievements .achieve-container .achieve-cards-2 .time {
+    font-size: 9px;
+    font-weight: 300;
+    margin-top: 8px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.727);
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 footer {
     width: 100%;
     height: auto;
-    background-color: #00031a;
-    border-top: 1px solid #1b0c3eb3;
+    background-color: black;
+    /* border-top: 1px solid #1b0c3eb3; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     gap: 20px;
     padding: 30px 80px;
+    position: relative;
+    overflow: hidden;
 }
 
 .final-links {
@@ -1143,6 +1482,7 @@ footer {
     background-color: transparent;
     display: flex;
     gap: 15px;
+    z-index: 3;
 }
 
 .final-links a{
@@ -1178,12 +1518,14 @@ footer {
 }
 
 .foot-left h1 {
-    font-size: 30px;
+    font-size: 40px;
+    font-family: 'Sora';
     background-color: transparent;
     color: rgba(255, 255, 255, 0.511);
     cursor: default;
     user-select: none;
-    font-weight: 900;
+    font-weight: 600;
+    letter-spacing: -3px;
 }
 
 .foot-left p {
@@ -1421,6 +1763,11 @@ footer {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.feedback-line a{
+    width: fit-content;
+    text-decoration: none;
 }
 
 .feedback:hover {
@@ -1953,7 +2300,7 @@ footer {
     height: 40px;
     margin-top: 10px;
     background-color: rgba(253, 252, 252, 0.487);
-    border: 1px solid #e9e9e9;
+    border: 1px solid #f4f4f4;
     border-radius: 40px;
     cursor: pointer;
     transition: .2s ease;
@@ -1983,48 +2330,360 @@ footer {
     font-weight: 600;
 }
 
-.notification {
-    display: block;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+#v2-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#v2-section h2 {
+    background-color: transparent;
+    color: black;
+    font-family: 'IBM Plex Mono';
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: -20px;
+    padding-top: 20px;
+    letter-spacing: 10px;
+    padding-left: 20px;
+    cursor: default;
+    user-select: none;
+}
+
+#v2-section .main-h1 {
+    background-color: transparent;
+    color: black;
+    font-family: 'Sora';
+    font-weight: 250;
+    letter-spacing: -15px;
+    font-size: 190px;
+    cursor: default;
+    transition: .4s ease;
+    padding-left: 20px;
+    user-select: none;
+}
+
+#v2-section .main-h1:hover {
+    font-weight: 500;
+}
+
+#v2-section .main2-h1 {
+    cursor: default;
+    /* width: fit-content; */
+    background-color: transparent;
+    color: black;
+    font-family: 'Sora';
+    font-weight: 600;
+    letter-spacing: -17px;
+    font-size: 190px;
+    margin-top: -50px;
+    transition: .4s ease;
+    padding-left: 20px;
+    user-select: none;
+
+}
+
+.light {
+    background-color: transparent;
+    font-family: 'Sora';
+    color: black;
+    font-weight: 200;
+    font-size: 250px;
+    letter-spacing: -20px;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    user-select: none;
+    overflow: hidden;
+    opacity: 20%;
+    margin-top: -120px;
+    cursor: default;
+}
+
+#v2-section .main2-h1:hover {
+    letter-spacing: 20px;
+}
+
+.v2-btn-class-1 {
+    background-color: transparent;
+    padding-left: 20px;
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.v2-btn-1 {
+    padding: 15px 30px;
+    background-color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    font-family: 'Sora';
+    transition: .2s ease;
+    border-radius: 4px;
+    color: white;
+}
+
+.v2-btn-1:hover {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+
+}
+
+.v2-btn-2:hover {
+    background-color: black;
+    color: white;
+}
+
+.v2-btn-2 {
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid black;
+    cursor: pointer;
+    color: black;
+    font-family: 'Sora';
+    transition: .2s ease;
+    border-radius: 4px;
+}
+
+.v2-btn-class-1 a {
+    width: fit-content;
+}
+
+.final-light {
+    font-size: 230px;
+    position: absolute;
+    background-color: transparent;
+    background: linear-gradient(to top, transparent, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    top: -80px;
+    font-weight: 300;
+    opacity: 0.16;
+    letter-spacing: -20px;
+    font-family: 'Sora';
+    cursor: default;
+    user-select: none;
+    z-index: 0;
+    pointer-events: none;
+    left: 0;
+}
+
+.res {
+    padding: 30px 80px;
+}
+
+.res p {
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.res .res-main h1 {
+    font-family: "Sora";
+    letter-spacing: -1px;
+}
+
+.res-main {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.res-grid {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300%), auto));
+    align-items: flex-start;
+}
+
+.res-card {
+    min-width: 0;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.res-card .res-title {
+    background-color: transparent;
+}
+
+.res-title h2 {
+    font-size: 24px;
+    margin-top: 0;
+    background-color: transparent;
+    padding-left: 8px;
+}
+
+.res-card .res-links {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+.res-card .res-links a {
+    width: 100%;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 12px;
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
     align-items: center;
-    padding: 10px 15px;
-    background-color: #2d1958;
-    margin-top: 10px;
-    margin-bottom: -50px;
-    font-size: 13px;
-    border: 1px solid #422978;
+    transition: .1s ease;
 }
 
-.update-notification a{
-    text-decoration: none;
-    color: #c8a3f0;
+.res-card .res-links a svg {
+    width: 20px;
 }
 
-.update-notification a:hover{
-    text-decoration: underline;
+.res-links a span {
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-.notification svg {
-    width: 25px;
-    height: 25px;
+.res-card .res-links a:hover {
+    background-color: #cbcbcb77;
+}
+
+.res-card .res-links a:hover svg {
+    color: #e45e54;
+}
+
+.download-form {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.598);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-form svg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
     cursor: pointer;
     border-radius: 50%;
-    padding: 3px;
+    padding: 5px;
 }
 
-.notification svg:hover {
-    background-color: #26164a;
+.main-form svg:hover {
+    background-color: rgba(0, 0, 0, 0.105);
 }
 
-.update-notification {
+.main-form {
+    max-width: 500px;
+    height: auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.main-form h2 {
+    font-size: 22px;
+    font-family: "Sora";
+    letter-spacing: -1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.main-form .intro-p {
+    font-size: 11px;
+    margin-bottom: 25px;
+    margin-top: 3px;
+    color: black;
+    text-align: left;
+}
+
+#downloadForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#downloadForm input {
+    min-width: 400px;
+    height: 40px;
+    border: 1px solid black;
+    padding: 0 10px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+
+#downloadForm button {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.885);
+    color: white;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#downloadForm button:hover {
+    background-color: black
+}
+
+#downloadForm input:focus-visible {
+    border: 2px solid black;
+    outline: none;
+}
+
+#formMessage {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main-form p {
+    font-size: 8px;
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.531);
+}
+
+.resource-display {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    color: black;
+    width: 100%;
+    background-color:  rgb(241, 241, 241);
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.resource-display p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    color: black;
+    margin-top: 0;
+}
+
+.resource-display small {
     background-color: transparent;
-
+    font-size: 8px;
 }
+
 
 @media(max-width: 1000px){
     .hero .hero_left{
@@ -2054,6 +2713,15 @@ footer {
     .about-main .about_info {
         max-width: none;
     }
+}
+
+.no-file-txt {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 @media(max-width: 1300px){
@@ -2285,6 +2953,30 @@ footer {
         text-align: center;
         justify-content: center;
         border-radius: 30px;
+    }
+
+    .res {
+        padding: 30px 15px;
+    }
+
+    .main-form {
+        max-width: 300px;
+        height: auto;
+        padding: 20px 20px;
+        border-radius: 10px;
+    }
+    
+    .main-form {
+        padding: 20px;
+    }
+
+    #downloadForm input {
+        min-width: 80px;
+        height: 40px;
+        border: 1px solid black;
+        padding: 0 10px;
+        border-radius: 7px;
+        font-size: 12px;
     }
 }
 
