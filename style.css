@@ -2940,20 +2940,6 @@ footer {
     #contact .contact-holder {
         padding: 40px;
     }
-}
-
-@media(max-width: 440px){
-    .project_cards .btns {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project_cards .btns button {
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        border-radius: 30px;
-    }
 
     .res {
         padding: 30px 15px;
@@ -2978,6 +2964,21 @@ footer {
         border-radius: 7px;
         font-size: 12px;
     }
+}
+
+@media(max-width: 440px){
+    .project_cards .btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project_cards .btns button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
 }
 
 @media(max-width: 700px){
