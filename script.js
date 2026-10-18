@@ -96,15 +96,15 @@ if (form) {
         message.textContent = "Submitting...";
 
         const { error } = await supabase
-            .from('resources_downlaods')
-            .insert([
-                {
-                    name: name,
-                    email: email,
-                    instagram_id: instagram_id,
-                    resource_name: currentResource.name
-                }
-            ]);
+        .from('resources_downlaods')
+        .insert([
+            {
+                name: name,
+                email: email,
+                instagram_id: instagram_id,
+                resource_name: currentResource.name
+            }
+        ]);
 
         if (error) {
             console.error(error);
@@ -113,7 +113,7 @@ if (form) {
             return;
         }
 
-        // message.textContent = "Details saved successfully";
+        message.textContent = "Details saved successfully";
 
         const link = document.createElement('a');
 
@@ -131,3 +131,32 @@ if (form) {
     });
 
 }
+const expressBtn = document.getElementById('express-btn');
+const expressCode = document.getElementById('express-code');
+const expressClose = document.getElementById('express-close');
+
+const notWorking = document.querySelectorAll('.project-wrapper .project-category-links .not-working-link');
+const notWorkingBox = document.querySelector('.not-working-box');
+
+
+expressBtn.addEventListener('click', () => {
+    expressCode.style.display = 'block';
+});
+
+expressClose.addEventListener('click', () => {
+    expressCode.style.display = 'none';
+})
+
+notWorking.forEach((button) => {
+    button.addEventListener('click', () => {
+        notWorkingBox.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    });
+});
+
+const okayBtn = document.querySelector('#okay-btn');
+
+okayBtn.addEventListener('click', () => {
+    notWorkingBox.style.display = "none";
+    document.body.style.overflow = "";
+});
