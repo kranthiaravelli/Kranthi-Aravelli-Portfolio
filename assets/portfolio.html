@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kranthi Aravelli | Portfolio</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="favicon" href="../Images/favicon-32x32.png">
+</head>
+<body>
+
+    <nav>
+        <h1>Kranth<span>i</span></h1>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <svg onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
+
+        <div class="nav_elements" id="nav-elements">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#github">GitHub</a></li>
+            <li><a href="../index.html#achievements">Achievements</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">About</a></li>
+            <li><a href="../assets/resources.html">Resources</a></li>
+            <!-- <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">Services</a></li> -->
+            <li><a href="#" class="selected" onclick="alert('This section is being modified! Will be updated soon.')">More</a></li>
+            <li><a href="#" onclick="alert('Resume will be uploaded soon.')"><button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>Resume</button></a></li>
+        </div>
+    </nav>
+
+    <p class="alert">Please open this site on Desktop for better experience, I am making improvements to make it compatible on all devices.</p>
+    
+    <div class="not-working-box">
+        <div class="n-w-small-box">
+            <h1>Feature Coming Soon...</h1>
+            <p>This feature is under development. Will be available soon.</p>
+            <button id="okay-btn">Okay</button>
+        </div>
+    </div>
+
+
+    <div class="project-wrapper">
+        <div class="project-inner-head-wrapper">
+            <span>MY PROJECTS</span>
+            <h1>Things I've <span>Built</span></h1>
+            <p>A collection of all of my projects. Every small project matters to me, I collected them and put here to present them. Just have a look</p>
+        </div>
+        <div class="project-category-links">
+            <button class="project-link-selected">All</button>
+            <button class="not-working-link">Web Development</button>
+            <button class="not-working-link">Python / ML</button>
+            <button class="not-working-link">Others</button>
+        </div>
+        <div class="projects-cards-container-wrapper">
+            
+            <div class="project-section-card">
+                <div class="project-section-card-image">
+                    <h2>LiteStorer</h2>
+                    <span class="recent-project" style="background-color: rgba(255, 0, 68, 0.1); color: rgba(255, 0, 68); border: 1px solid rgba(255, 0, 68, 0.39);">Restricted</span>
+                    <span class="recent-project" style="right: 70px;">Recent</span>
+                </div>
+                <div class="project-section-card-info">
+                    <h3>Literature Managing Platform</h3>
+                    <p>Platform for people who wants to organise their writings at one place. I built this platform for myself. To organize my personal writings according to my convinience.</p>
+                </div>
+                <div class="project-section-card-tags">
+                    <span class="project-skill">HTML</span>
+                    <span class="project-skill">CSS</span>
+                    <span class="project-skill">JavaScript</span>
+                    <span class="project-skill">MySQL</span>
+                    <span class="project-skill">MERN</span>
+                    <span>Frontend</span>
+                    <span>Backend</span>
+                </div>
+                <div class="project-section-card-buttons">
+                    <a href="#"><button class="vist-site" onclick="alert('Cannot access this site. Contact Admin to know more details regarding this site.')">Visit Site <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm296.5-143.5Q560-327 560-360t-23.5-56.5Q513-440 480-440t-56.5 23.5Q400-393 400-360t23.5 56.5Q447-280 480-280t56.5-23.5ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg></button></a>
+                    <a href="#"><button class="github-visit">View Code <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#06132a"><path d="M240-280 40-480l200-200 56 56-143 144 143 144-56 56Zm178 132-76-24 200-640 76 24-200 640Zm302-132-56-56 143-144-143-144 56-56 200 200-200 200Z"/></svg></button></a>
+                </div>
+            </div>
+            
+            <div class="project-section-card">
+                <div class="project-section-card-image">
+                    <h2>OnePlus</h2>
+                    <!-- <span class="recent-project">Recent</span> -->
+                </div>
+                <div class="project-section-card-info">
+                    <h3>OnePlus Buds Landing Web Page</h3>
+                    <p>A simple beginner project that I've took to try recreating the basic Google browser UI. Using HTML, CSS skills I have. It is not responsive though.</p>
+                </div>
+                <div class="project-section-card-tags">
+                    <span class="project-skill">HTML</span>
+                    <span class="project-skill">CSS</span>
+                    <span>Frontend</span>
+                </div>
+                <div class="project-section-card-buttons">
+                    <a href="#"><button class="vist-site">Visit Site <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></button></a>
+                    <a href="#"><button class="github-visit">View Code <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#06132a"><path d="M240-280 40-480l200-200 56 56-143 144 143 144-56 56Zm178 132-76-24 200-640 76 24-200 640Zm302-132-56-56 143-144-143-144 56-56 200 200-200 200Z"/></svg></button></a>
+                </div>
+            </div>
+
+            <div class="project-section-card">
+                <div class="project-section-card-image">
+                    <h2>Google Clone</h2>
+                    <!-- <span class="recent-project">Recent</span> -->
+                </div>
+                <div class="project-section-card-info">
+                    <h3>Google Clone Website</h3>
+                    <p>A simple beginner project that I've took to try recreating the basic Google browser UI. Using HTML, CSS skills I have. It is not responsive though.</p>
+                </div>
+                <div class="project-section-card-tags">
+                    <span class="project-skill">HTML</span>
+                    <span class="project-skill">CSS</span>
+                    <span>Frontend</span>
+                </div>
+                <div class="project-section-card-buttons">
+                    <a href="#"><button class="vist-site">Visit Site <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></button></a>
+                    <a href="#"><button class="github-visit">View Code <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#06132a"><path d="M240-280 40-480l200-200 56 56-143 144 143 144-56 56Zm178 132-76-24 200-640 76 24-200 640Zm302-132-56-56 143-144-143-144 56-56 200 200-200 200Z"/></svg></button></a>
+                </div>
+            </div>
+
+            <div class="project-section-card">
+                <div class="project-section-card-image">
+                    <h2>Comer</h2>
+                    <!-- <span class="recent-project">Recent</span> -->
+                </div>
+                <div class="project-section-card-info">
+                    <h3>Comer Restraunt Menu Page (Concept Brand)</h3>
+                    <p>A simple beginner project that I've took to try recreating the basic Google browser UI. Using HTML, CSS skills I have. It is not responsive though.</p>
+                </div>
+                <div class="project-section-card-tags">
+                    <span class="project-skill">HTML</span>
+                    <span class="project-skill">CSS</span>
+                    <span>Frontend</span>
+                </div>
+                <div class="project-section-card-buttons">
+                    <a href="#"><button class="vist-site">Visit Site <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></button></a>
+                    <a href="#"><button class="github-visit">View Code <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#06132a"><path d="M240-280 40-480l200-200 56 56-143 144 143 144-56 56Zm178 132-76-24 200-640 76 24-200 640Zm302-132-56-56 143-144-143-144 56-56 200 200-200 200Z"/></svg></button></a>
+                </div>
+            </div>  
+
+            <div class="project-section-card">
+                <div class="project-section-card-image">
+                    <h2>ML Model Training</h2>
+                </div>
+                <div class="project-section-card-info">
+                    <h3>Training a Machine Learning Model</h3>
+                    <p>A simple beginner project that I've took to try recreating the basic Google browser UI. Using HTML, CSS skills I have. It is not responsive though.</p>
+                </div>
+                <div class="project-section-card-tags">
+                    <span class="project-skill">HTML</span>
+                    <span class="project-skill">CSS</span>
+                    <span>Frontend</span>
+                </div>
+                <div class="project-section-card-buttons">
+                    <a href="#"><button class="vist-site">Visit Site <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="white"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></button></a>
+                    <a href="#"><button class="github-visit">View Code <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#06132a"><path d="M240-280 40-480l200-200 56 56-143 144 143 144-56 56Zm178 132-76-24 200-640 76 24-200 640Zm302-132-56-56 143-144-143-144 56-56 200 200-200 200Z"/></svg></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="../script.js"></script>
+</body>
+</html>
