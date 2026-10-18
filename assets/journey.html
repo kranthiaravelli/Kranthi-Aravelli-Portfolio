@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kranthi Aravelli | Journey</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="favicon" href="../Images/favicon-32x32.png">
+</head>
+<body>
+    <nav>
+        <h1>Kranth<span>i</span></h1>
+
+        <div class="menu-toggle" id="menu-toggle">
+            <svg onclick="openMenu()" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </div>
+
+        <div class="nav_elements" id="nav-elements">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html#skills">Skills</a></li>
+            <li><a href="../index.html#projects">Projects</a></li>
+            <li><a href="../index.html#github">GitHub</a></li>
+            <li><a href="../index.html#achievements">Achievements</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+            <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">About</a></li>
+            <li><a href="../assets/resources.html">Resources</a></li>
+            <!-- <li><a href="#" onclick="alert('This section is being modified! Will be updated soon.')">Services</a></li> -->
+            <li><a href="#" class="selected" onclick="alert('This section is being modified! Will be updated soon.')">More</a></li>
+            <li><a href="#" onclick="alert('Resume will be uploaded soon.')"><button class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>Resume</button></a></li>
+        </div>
+    </nav>
+
+    <p class="alert">Please open this site on Desktop for better experience, I am making improvements to make it compatible on all devices.</p>
+
+
+    <div class="journey-container">
+        <h1>My Journey</h1>
+        <p>My detailed journey updates, This is to present you what I learned and also make me to track my progress.</p>
+    
+    <div class="journey-wrapper">
+        <div class="journey-box">
+            <h2 class="journey-head" style="padding-top: 15px; padding-bottom: 8px; font-size: 30px;">2026</h2>
+            <div class="journey-card">
+                <h3>Backend - Express (Part 2)</h3>
+                <p>Today I tried to code what all I have learnt in the Node Backend, moving on with my Backend journey, I tried to code a basic application. Also I learnt &nbsp; <b class="code">includes()</b> &nbsp; method. How does <b class="code">path.join()</b> &nbsp; work.</p>
+                <button id="express-btn">See Code</button>
+                <p class="journey-date">18 October, 2026</p>
+            </div>
+
+            <div class="journey-card">
+                <h3>Backend - Express (Part 1)<span>Recorded from here</span></h3>
+                <p>I learned the basic Node packages, How does &nbsp; <b class="code">require()</b> &nbsp; function work, How to install, How to use, What are dependencies, Express, Figlet and all. How to initialize a package.json file, How to create routes, what is request & response, What are ports. How to template and render the html pages, how to render the static pages. These are all the things I've come across.</p>
+                <p class="journey-date">17 October, 2026</p>
+            </div>
+
+            <div class="journey-card">
+                <h3>Previous Overview</h3>
+                <p>Before recording my journey here, I have a strong grip over the fundamentals of the Frontend Development which is HTML, CSS & JavaScript. Now moving on to the Backend, System Design, Mern Stack and then I started learning Node JS, Express JS and many more. So the link to the projects that I've made using my frontend knowledge are provided below please check them out.</p>
+                <a href="../assets/portfolio.html">Projects</a>
+                <p class="journey-date">Previous Learnings</p>
+            </div>
+        </div>
+        <div class="journey-display">
+            <!-- <h1>Journey Display</h1> -->
+            <div id="express-code" class="source-code">
+                <div class="button-holder">
+                    <a href="../assets/resources.html"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>Full Code</a>
+                    <button id="express-close"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </div>
+                <span>
+<h2>Backend - Express (Part 2)</h2>
+const express = require("express");
+const app = express();
+
+const path = require("path");
+
+const port = 3000;
+
+app.use(express.static(path.join(__dirname, "/public/css")));
+app.use(express.static(path.join(__dirname, "/public/js")));
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
+
+app.get("/", (req, res) => {
+    res.send("Backend running successfully");
+});
+
+app.get("/home", (req, res) => {
+    res.send("You Reached Home route successfully!");
+});
+
+app.get("/ig/:username", (req, res) => {
+    const {username} = req.params;
+    const instaData = require("./data.json");
+    const data = instaData[username];
+    if(data) {
+        res.render("instagram.ejs", { data });
+    } else {
+        res.render("error.ejs");
+    }
+});
+
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+});
+                </span>
+            </div>
+        </div>
+    </div>
+    
+
+    <script type="module" src="../script.js"></script>
+</body>
+</html>
